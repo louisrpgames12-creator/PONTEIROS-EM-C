@@ -1,0 +1,17 @@
+#include <stdio.h>
+void troca(float *a, float *b) {
+    float aux;
+    aux = *b;
+    *b = *a;
+    *a = aux;
+    printf("VALOR 1: %.2f\nVALOR 2: %.2f", *a, *b);
+}
+int main() {
+    float valor1, valor2;
+    printf("ME INFORME O VALOR 1 E DEPOIS O VALOR 2: ");
+    scanf("%f%f", &valor1, &valor2);
+
+    troca(&valor1, &valor2);
+
+    return 0;
+}
