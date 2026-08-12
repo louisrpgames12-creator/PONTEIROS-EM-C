@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()  {
+    int array[5] = {0}, i, j = 4, aux;
+    
+    for(i = 0; i < 5; i++) {
+        
+        printf("\nME INFORME UM NUMERO: ");
+        scanf("%d", &array[i]);
+        
+    }
+    
+    for(i = 0; i < 5/2 ; i++) {
+            aux = array[i];
+            array[i] = array[j];
+            array[j] = aux;
+            j--;
+    }
+    
+    for(i = 0; i < 5; i++) {
+        
+        printf("\n %d", array[i]);
+        
+    }
+    
+    
+    return 0;
+}
