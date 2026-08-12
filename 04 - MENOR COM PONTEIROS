@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+int i, menor = 1000;
+int v[10] = {4, 7, 8, 12, 34, 3, 5, 3, 2, 9};
+//declara o *p apontando para o vetor V
+int *p = v;
+//o conteúdo apontado por p recebe + 2 
+for(i = 0; i < 10; i++) {
+    if(menor > *(p + i))
+        menor = *(p + i);
+}
+
+printf("%d", menor);
+    return 0;
+}
