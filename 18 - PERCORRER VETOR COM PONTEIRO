@@ -1,0 +1,16 @@
+#include <stdio.h>
+void percorrer(int *vetor_inteiro) {
+    int i;
+    for(i = 0; i < 5; i++) {
+            printf("%d ", *(vetor_inteiro + i));
+    }
+
+}
+
+int main() {
+    int vetor_inteiro[5] = {1,2,3,4,5};
+
+    percorrer(vetor_inteiro);   
+
+    return 0;
+}
