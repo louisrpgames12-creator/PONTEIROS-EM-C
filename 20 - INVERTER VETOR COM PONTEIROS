@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int vetor_inteiro[6] = {0,1,2,3,4,5}, *ptr_fim = (vetor_inteiro + 5), i = 0, aux;
+    while(i < 3) {
+         aux = *(vetor_inteiro + i);
+        *(vetor_inteiro + i) = *(ptr_fim - i);
+        *(ptr_fim - i) = aux;
+        i++;
+    }
+
+    i = 0;
+
+    while(i < 5) {
+        printf("%d ", *(vetor_inteiro + i));
+        i++;     
+    }
+
+    return 0;
+}
