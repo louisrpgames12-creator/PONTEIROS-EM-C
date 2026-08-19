@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int valor = 10;
+    int *ponteiro = &valor;
+
+    printf("ENDERECO DA VARIAVEL: %p", &valor);
+    printf("\nVALOR GUARDADO NO PONTEIRO: %p", ponteiro);
+    printf("\nVALOR APONTADO POR ELE: %d", *ponteiro);
+
+
+    return 0;
+}
