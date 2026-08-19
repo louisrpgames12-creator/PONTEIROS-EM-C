@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int soma_mais_dez(int *inteiro) {
+    *inteiro += 10;
+}
+
+int main() {
+    int inteiro;
+
+    printf("ME INFORME UM VALOR INTEIRO: ");
+    scanf("%d", &inteiro);
+
+    soma_mais_dez(&inteiro);
+
+    printf("O VALOR + 10 = %d", inteiro);
+    return 0;
+}
