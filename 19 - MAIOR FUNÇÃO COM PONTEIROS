@@ -1,0 +1,20 @@
+#include <stdio.h>
+void encontra_maior(int *vetor_inteiro, int *maior) {
+    int i;
+    for(i = 0; i < 5; i++) {
+            if(*maior < *(vetor_inteiro + i)) {
+                *maior = *(vetor_inteiro + i);
+            }
+    }
+
+}
+
+int main() {
+    int vetor_inteiro[5] = {1,2,3,4,5}, maior;
+
+    encontra_maior(vetor_inteiro, &maior);
+
+    printf("MAIOR: %d", maior);   
+
+    return 0;
+}
