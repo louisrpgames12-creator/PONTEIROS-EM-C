@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int calcular_quadrado(int inteiro) {
+    inteiro *= inteiro;
+    
+    return inteiro;
+}
+
+int main() {
+    int inteiro, inteiro_quadrado;
+
+    printf("ME INFORME UM VALOR INTEIRO: ");
+    scanf("%d", &inteiro);
+
+    inteiro_quadrado = calcular_quadrado(inteiro);
+
+    printf("O VALOR %d * 10 = %d", inteiro, inteiro_quadrado);
+    return 0;
+}
